@@ -10,3 +10,9 @@ body {
     color-scheme: dark;
   }
 }
+
+.bg-tentan {
+  background-image: url('/assets/him.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
