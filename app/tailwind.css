@@ -12,7 +12,7 @@ body {
 }
 
 .bg-tentan {
-  background-image: url('/assets/him.jpg');
+  background-image: url("/assets/him.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -20,12 +20,28 @@ body {
 .bgHoverCard {
   background-color: white;
   transition: all 0.3s ease-in-out 0s;
-  background-position: center; 
+  background-position: center;
+}
+
+.bgCover {
+  background-position: center;
+  background-image: url("/assets/cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bgHoverCard:hover {
-  background-position: center; 
-  background-image: url('/assets/him.jpg');
+  background-position: center;
+  background-image: url("/assets/him.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.primaryCard .secondaryCard {
+  display: none;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.primaryCard:hover .secondaryCard {
+  display: flex;
 }
