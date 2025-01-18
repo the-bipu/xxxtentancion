@@ -16,3 +16,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.bgHoverCard {
+  background-color: white;
+  transition: all 0.3s ease-in-out 0s;
+  background-position: center; 
+}
+
+.bgHoverCard:hover {
+  background-position: center; 
+  background-image: url('/assets/him.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
