@@ -11,28 +11,19 @@ body {
   }
 }
 
+html::-webkit-scrollbar {
+  width: 0rem;
+}
+
 .bg-tentan {
   background-image: url("/assets/him.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bgHoverCard {
-  background-color: white;
-  transition: all 0.3s ease-in-out 0s;
-  background-position: center;
-}
-
 .bgCover {
   background-position: center;
   background-image: url("/assets/cover.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bgHoverCard:hover {
-  background-position: center;
-  background-image: url("/assets/him.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -44,4 +35,69 @@ body {
 
 .primaryCard:hover .secondaryCard {
   display: flex;
+}
+
+.bgHoverFirst {
+  background-position: center;
+  background-image: url("/assets/tenten.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0.2;
+}
+
+.bgHoverFirst:hover {
+  opacity: 1;
+}
+
+.bgHoverSecond {
+  background-position: center;
+  background-image: url("/assets/grid/tentan1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0.2;
+}
+
+.bgHoverSecond:hover {
+  opacity: 1;
+}
+
+.bgHoverThird {
+  background-position: center;
+  background-image: url("/assets/grid/tentan3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0.2;
+}
+
+.bgHoverThird:hover {
+  opacity: 1;
+}
+
+.bgHoverFour {
+  background-position: center;
+  background-image: url("/assets/grid/tentan4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0.2;
+}
+
+.bgHoverFour:hover {
+  opacity: 1;
+}
+
+.bgHoverKid {
+  background-position: center;
+  background-image: url("/assets/grid/kid.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0.2;
+}
+
+.bgHoverKid:hover {
+  opacity: 1;
 }
