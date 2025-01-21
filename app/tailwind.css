@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Fake Receipt';
+  src: url('./fonts/Fake Receipt.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   @apply bg-white dark:bg-gray-950;
+
+  font-family: 'Fake Receipt', sans-serif;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -65,7 +74,7 @@ html::-webkit-scrollbar {
 
 .bgHoverThird {
   background-position: center;
-  background-image: url("/assets/grid/tentan3.jpg");
+  background-image: url("/assets/grid/tentan3.png");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.3s ease-in-out 0s;
@@ -89,6 +98,19 @@ html::-webkit-scrollbar {
   opacity: 1;
 }
 
+.bgHoverFive {
+  background-position: center;
+  background-image: url("/assets/grid/tentan5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0.2;
+}
+
+.bgHoverFive:hover {
+  opacity: 1;
+}
+
 .bgHoverKid {
   background-position: center;
   background-image: url("/assets/grid/kid.png");
@@ -100,8 +122,4 @@ html::-webkit-scrollbar {
 
 .bgHoverKid:hover {
   opacity: 1;
-}
-
-.min-h-120 {
-  height: 560px;
 }
