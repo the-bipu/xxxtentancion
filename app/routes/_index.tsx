@@ -14,6 +14,8 @@ import him from "/assets/tenten.jpg";
 import cover from "/assets/cover.png";
 
 import { PauseIcon, PlayIcon } from "@radix-ui/react-icons";
+import Navigation from "~/components/navigation";
+import Footer from "~/components/footer";
 
 export default function Index() {
   const [isPlaying, setIsPlaying] = useState<{ [key: string]: boolean }>({});
@@ -48,10 +50,12 @@ export default function Index() {
   };
 
   return (
-    <div className="flex h-full w-full flex-col">
+    <div className="flex h-full w-full flex-col relative">
+
+      <Navigation />
 
       <div className="min-h-screen w-full flex flex-col items-center justify-center gap-16 bg-[#f8f8f8]">
-        <header className="flex flex-col md:w-11/12 w-full h-full justify-center md:items-start items-center gap-9 relative md:pt-10 pt-0">
+        <header className="flex flex-col md:w-11/12 w-full h-full justify-center md:items-start items-center gap-9 relative md:pt-4 pt-0">
           <img src={logoM} alt="" className="md:w-1/2 w-11/12 md:relative absolute top-5" />
           <img src={him} alt="xxxtentancion" className="md:flex hidden" />
           <img src={kidJosh} alt="xxxtentancion" className="md:hidden flex" />
@@ -59,7 +63,7 @@ export default function Index() {
       </div>
 
       <div className="min-h-screen w-full md:flex hidden flex-col items-center justify-center gap-16 bg-[#f8f8f8]">
-        <header className="flex flex-col w-11/12 h-full justify-center gap-9 relative pb-10">
+        <header className="flex flex-col w-11/12 h-full justify-center gap-4 relative pb-10">
           <img src={him} alt="xxxtentancion" className="rotate-180 -scale-x-100" />
           <img src={logoM} alt="" className="w-1/2" />
         </header>
@@ -90,37 +94,13 @@ export default function Index() {
         </div>
       </div>
 
-      {/* <div className="flex flex-col gap-10 py-20 bg-black">
-        <div className="text-center text-2xl uppercase font-bold">Journey</div>
-        <div className="flex flex-row gap-10 flex-wrap w-full justify-center items-center">
-          <div className="md:w-96 w-full md:h-80 h-52 flex flex-col items-center justify-center bgHoverCard">
-            <img src={logo} alt="" className="md:w-44 w-10/12" />
-          </div>
-          <div className="md:w-96 w-full md:h-80 h-52 flex flex-col items-center justify-center bgHoverCard">
-            <img src={logo} alt="" className="md:w-44 w-10/12" />
-          </div>
-          <div className="md:w-96 w-full md:h-80 h-52 flex flex-col items-center justify-center bgHoverCard">
-            <img src={logo} alt="" className="md:w-44 w-10/12" />
-          </div>
-          <div className="md:w-96 w-full md:h-80 h-52 flex flex-col items-center justify-center bgHoverCard">
-            <img src={logo} alt="" className="md:w-44 w-10/12" />
-          </div>
-          <div className="md:w-96 w-full md:h-80 h-52 flex flex-col items-center justify-center bgHoverCard">
-            <img src={logo} alt="" className="md:w-44 w-10/12" />
-          </div>
-          <div className="md:w-96 w-full md:h-80 h-52 flex flex-col items-center justify-center bgHoverCard">
-            <img src={logo} alt="" className="md:w-44 w-10/12" />
-          </div>
-        </div>
-      </div> */}
-
       <div className="min-h-96 w-full flex flex-col items-center justify-center py-24 gap-16 bg-tentan">
         <header className="flex flex-col w-11/12 h-full justify-center gap-9 relative">
           <img src={logoM} alt="" />
         </header>
       </div>
 
-      <div className="flex flex-col gap-10 py-20 bg-white text-black">
+      <div className="flex flex-col gap-10 pt-16 pb-20 bg-white text-black">
         <div className="text-center text-2xl uppercase font-bold text-black">Personal Favs</div>
         <div className="flex flex-row gap-10 flex-wrap w-full justify-center items-center">
 
@@ -198,6 +178,8 @@ export default function Index() {
 
         </div>
       </div>
+
+      <Footer />
 
     </div>
   );
