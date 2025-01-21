@@ -8,7 +8,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-import logo from "/logo.svg";
+import kidJosh from "/assets/grid/kid.png";
 import logoM from "/logoM.svg";
 import him from "/assets/tenten.jpg";
 import cover from "/assets/cover.png";
@@ -51,33 +51,34 @@ export default function Index() {
     <div className="flex h-full w-full flex-col">
 
       <div className="min-h-screen w-full flex flex-col items-center justify-center gap-16 bg-[#f8f8f8]">
-        <header className="flex flex-col w-11/12 h-full justify-center gap-9 relative pt-10">
-          <img src={logoM} alt="" className="w-1/2" />
-          <img src={him} alt="xxxtentancion" />
+        <header className="flex flex-col md:w-11/12 w-full h-full justify-center md:items-start items-center gap-9 relative md:pt-10 pt-0">
+          <img src={logoM} alt="" className="md:w-1/2 w-11/12 md:relative absolute top-5" />
+          <img src={him} alt="xxxtentancion" className="md:flex hidden" />
+          <img src={kidJosh} alt="xxxtentancion" className="md:hidden flex" />
         </header>
       </div>
 
-      <div className="min-h-screen w-full flex flex-col items-center justify-center gap-16 bg-[#f8f8f8]">
+      <div className="min-h-screen w-full md:flex hidden flex-col items-center justify-center gap-16 bg-[#f8f8f8]">
         <header className="flex flex-col w-11/12 h-full justify-center gap-9 relative pb-10">
           <img src={him} alt="xxxtentancion" className="rotate-180 -scale-x-100" />
           <img src={logoM} alt="" className="w-1/2" />
         </header>
       </div>
 
-      <div className="flex flex-row min-h-screen bg-black">
-        <div className="w-1/4 h-screen">
-          <div className="w-full h-2/6 bgHoverSecond">hello</div>
-          <div className="w-full h-4/6 bgHoverFour">hello</div>
+      <div className="flex md:flex-row flex-col min-h-screen bg-black">
+        <div className="md:w-1/4 w-full md:h-screen h-auto">
+          <div className="w-full md:h-2/6 h-64 bgHoverSecond">hello</div>
+          <div className="w-full md:h-4/6 h-64 bgHoverFour">hello</div>
         </div>
-        <div className="w-1/4 h-screen bgHoverFirst">
-          hello
+        <div className="flex md:w-1/4 w-full md:h-screen min-h-96 relative items-center justify-center bgHoverFirst">
+          <span className="text-2xl font-semibold absolute top-10">Young Jahseh</span>
         </div>
-        <div className="w-1/4 h-screen">
-          <div className="w-full h-4/6 bgHoverFour">hello</div>
-          <div className="w-full h-2/6 bgHoverSecond">hello</div>
+        <div className="md:w-1/4 w-full md:h-screen h-auto">
+          <div className="w-full md:h-4/6 h-64 bgHoverFour">hello</div>
+          <div className="w-full md:h-2/6 h-64 bgHoverSecond">hello</div>
         </div>
-        <div className="w-1/4 h-screen bgHoverKid">
-          hello
+        <div className="md:flex hidden md:w-1/4 w-full h-screen relative items-center justify-center bgHoverKid">
+          <span className="text-2xl font-semibold absolute top-10">Kid Jahseh</span>
         </div>
       </div>
 

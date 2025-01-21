@@ -52,7 +52,7 @@ html::-webkit-scrollbar {
 
 .bgHoverSecond {
   background-position: center;
-  background-image: url("/assets/grid/tentan1.jpg");
+  background-image: url("/assets/grid/tentan1.png");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.3s ease-in-out 0s;
@@ -100,4 +100,8 @@ html::-webkit-scrollbar {
 
 .bgHoverKid:hover {
   opacity: 1;
+}
+
+.min-h-120 {
+  height: 560px;
 }
