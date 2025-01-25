@@ -21,4 +21,5 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
+  envPrefix: "PUBLIC_"
 });
