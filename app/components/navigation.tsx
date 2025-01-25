@@ -20,13 +20,23 @@ const Navigation = () => {
             <div className='fixed top-10 w-11/12 h-auto flex items-center justify-end z-20'>
                 <span className='text-black text-xl cursor-pointer z-20' onClick={() => setNavStatus(!navStatus)}>Menu</span>
             </div>
-            <div className={`fixed w-full h-screen bg-gray-400 left-0 top-0 ${navStatus ? 'flex' : 'hidden'} items-center justify-center z-10`}>
+            <div className={`fixed w-full h-screen bg-[#acacac] left-0 top-0 ${navStatus ? 'flex' : 'hidden'} items-center justify-center z-10`}>
                 <div className="flex flex-row text-black gap-3">
-                    <div className="cursor-pointer transition-all hover:underline">Home</div> |
-                    <div className="cursor-pointer transition-all hover:underline">About Us</div> |
-                    <div className="cursor-pointer transition-all hover:underline">Gallery</div> |
-                    <div className="cursor-pointer transition-all hover:underline">No Policies</div> |
-                    <div className="cursor-pointer transition-all hover:underline">Contact Us</div>
+                    <div className="cursor-pointer transition-all hover:underline">
+                        <a href='/'>Home</a>
+                    </div> |
+                    <div className="cursor-pointer transition-all hover:underline">
+                        <a href="/about-us">About Us</a>
+                    </div> |
+                    <div className="cursor-pointer transition-all hover:underline">
+                        <a href="/gallery">Gallery</a>
+                    </div> |
+                    <div className="cursor-pointer transition-all hover:underline">
+                        <a href="/no-policies">No Policies</a>
+                    </div> |
+                    <div className="cursor-pointer transition-all hover:underline">
+                        <a href="/contact-us">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
