@@ -39,6 +39,8 @@ const AboutUs = () => {
         }
     };
 
+    const envs = import.meta.env;
+
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white text-black">
 
@@ -68,7 +70,7 @@ const AboutUs = () => {
                         <audio
                             ref={(el) => (audioRefs.current["changes"] = el)}
                         >
-                            <source src="/music/changes.mp3" type="audio/mp3" />
+                            <source src={envs.PUBLIC_AUDIO_SRC_3} type="audio/mp3" />
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -92,7 +94,7 @@ const AboutUs = () => {
                         <audio
                             ref={(el) => (audioRefs.current["sad"] = el)}
                         >
-                            <source src="/music/SAD!.mp3" type="audio/mp3" />
+                            <source src={envs.PUBLIC_AUDIO_SRC_2} type="audio/mp3" />
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -116,7 +118,7 @@ const AboutUs = () => {
                         <audio
                             ref={(el) => (audioRefs.current["look-at-me"] = el)}
                         >
-                            <source src="/music/Look At Me!.mp3" type="audio/mp3" />
+                            <source src={envs.PUBLIC_AUDIO_SRC_1} type="audio/mp3" />
                             Your browser does not support the audio element.
                         </audio>
                     </div>
