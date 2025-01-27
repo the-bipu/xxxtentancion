@@ -3,7 +3,12 @@ import Navigation from "~/components/navigation"
 
 import logo from "/logoM.svg";
 
-const AboutUs = () => {
+export const meta = () => [
+    { title: "Gallery - XXXTENTACION" },
+    { name: "description", content: "XXXTENTACION" },
+];
+
+const Gallery = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white text-black">
 
@@ -40,4 +45,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs
+export default Gallery

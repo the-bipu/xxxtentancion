@@ -7,7 +7,12 @@ import { PauseIcon, PlayIcon } from "@radix-ui/react-icons";
 
 import cover from '/assets/cover.png';
 
-const AboutUs = () => {
+export const meta = () => [
+    { title: "Scores - XXXTENTACION" },
+    { name: "description", content: "XXXTENTACION" },
+];
+
+const ScoresPage = () => {
     const [isPlaying, setIsPlaying] = useState<{ [key: string]: boolean }>({});
     const audioRefs = useRef<{ [key: string]: HTMLAudioElement | null }>({});
 
@@ -131,4 +136,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs
+export default ScoresPage

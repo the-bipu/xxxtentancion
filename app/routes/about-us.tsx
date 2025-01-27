@@ -5,6 +5,11 @@ import logo from "/logoM.svg";
 
 import kid from '/assets/grid/kid-square.png';
 
+export const meta = () => [
+    { title: "About Us - XXXTENTACION" },
+    { name: "description", content: "XXXTENTACION" },
+];
+
 const AboutUs = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white text-black">
