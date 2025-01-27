@@ -3,6 +3,8 @@ import Navigation from "~/components/navigation"
 
 import logo from "/logoM.svg";
 
+import kid from '/assets/grid/kid-square.png';
+
 const AboutUs = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white text-black">
@@ -11,7 +13,9 @@ const AboutUs = () => {
             <Navigation />
 
             <div className="flex flex-col gap-4 w-11/12 h-auto py-10">
+
                 <div className="font-bold text-xl">Early Life</div>
+                <img src={kid} alt="" className="w-72" />
                 <div className="font-normal text-base text-justify">
                     On January 23, 1998, Jahseh Dwayne Ricardo Onfroy, better known as XXXTENTACION, was born in Plantation, Florida. X was raised mainly by his grandmother in Lauderhill, Florida due to his mother’s struggling financial situation at the time. Jahseh was never the perfect child and often got into a grave amount of trouble. He attended Margate Middle School, where he got expelled for multiple physical altercations with other students and then was sent to another school as a result. Six months later, X joined Piper High School, but dropped out during the 10th grade. X often told people that he was never the extrovert type and that he dealt with many mental health issues during his time in high school. He knew that the education system in America was not suited for him.
 
@@ -22,6 +26,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="font-bold text-xl">The Start of his career</div>
+                <img src={kid} alt="" className="w-72" />
                 <div className="font-normal text-base text-justify">
                     After being released from the correctional facility, X started to write music and record it. He released his first song on Soundcloud in 2013 titled, “News/Flock”. That same year, X ended up in juvenile detention for illegal firearm possession charges. At the facility, he met Stokeley Clevon Goulbourne, an artist we all know by the name of Ski Mask the Slump God. They soon became close friends and began freestyling together to pass time in juvy. After getting out, X purchased a microphone to start recording his own music, which then inspired Ski to do the same. In 2014, Jah released his first ‘official’ song, titled “Vice City” to Soundcloud, under the name of XXXTENTACION. Jahseh also started his own Hip-Hop collective called “Members Only”, which Ski joined after leaving his own group. Members Only has yet to hit the mainstream, and I don’t think they will, but the tapes they have put out have many gems.
 
@@ -32,6 +37,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="font-bold text-xl">Rise to Fame</div>
+                <img src={kid} alt="" className="w-72" />
                 <div className="font-normal text-base text-justify">
                     In 2015, a song that wasn’t under X’s name was released to Soundcloud. But in 2017, the track was officially released under the title, “Look At Me!”. This was X’s first hit song and it went uber viral on social media, as well as the charts. This track debuted at number 94 on the US Billboard hot 100 chart, peaking at number 34. This was X’s first charting single and was the one that basically blew up his career (The song has now surpassed 1 Billion streams).
 
@@ -57,6 +63,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="font-bold text-xl">The Death of XXXTENTACION</div>
+                <img src={kid} alt="" className="w-72" />
                 <div className="font-normal text-base text-justify">
                     On June 18, 2018, X was at RIVA Motorsports, in Deerfield Beach, Florida, looking to purchase a motorcycle. After leaving the store and getting into his car, X was shot by a man named Dedrick Williams (3 other men were also charged with murder). He was rushed to the hospital immediately, where he was pronounced dead.
 
@@ -67,6 +74,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="font-bold text-xl">Remembering Jahseh Onfroy</div>
+                <img src={kid} alt="" className="w-72" />
                 <div className="font-normal text-base text-justify">
                     Jahseh dealt with many demons ever since he was a young kid. There is no denying that he has done many terrible things over the years, but one thing I really respected about him was how much he wanted to change. The past year before his death, he dedicated all of his time to holding charity events, raising awareness for teenage mental health, and most importantly, he used his platform to address his own issues, hoping that it would help others with their own. He was on the right path and could have contributed so much to the world today. His music alone has saved a numerous amount of lives. X’s impact is undeniable and his legacy will continue to live on through his fans. Young legend, gone too soon.
                 </div>
