@@ -18,7 +18,9 @@ const Navigation = () => {
     return (
         <div className='absolute w-full h-auto flex items-center justify-center top-0 left-0'>
             <div className='fixed top-10 w-11/12 h-auto flex items-center justify-end z-20'>
-                <span className='text-black text-xl cursor-pointer z-20' onClick={() => setNavStatus(!navStatus)}>Menu</span>
+                <span className='text-black text-xl cursor-pointer z-20' onClick={() => setNavStatus(!navStatus)}>
+                    {navStatus ? 'Close' : 'Menu'}
+                </span>
             </div>
             <div className={`fixed w-full h-screen bg-[#acacac] left-0 top-0 ${navStatus ? 'flex' : 'hidden'} items-center justify-center z-10`}>
                 <div className="flex flex-row text-black gap-3">

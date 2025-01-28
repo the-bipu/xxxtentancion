@@ -17,10 +17,10 @@ const Footer = () => {
                 <img src={insta} alt="" className="w-10 cursor-pointer" />
             </div>
             <div className="flex flex-row text-black text-sm gap-3">
-                <div className="cursor-pointer transition-all hover:underline">About Us</div> |
-                <div className="cursor-pointer transition-all hover:underline">Gallery</div> |
-                <div className="cursor-pointer transition-all hover:underline">No Policies</div> |
-                <div className="cursor-pointer transition-all hover:underline">Contact Us</div>
+                <a href='/about-us' className="cursor-pointer transition-all hover:underline">About Us</a> |
+                <a href='/gallery' className="cursor-pointer transition-all hover:underline">Gallery</a> |
+                <a href='/no-policies' className="cursor-pointer transition-all hover:underline">No Policies</a> |
+                <a href='/contact-us' className="cursor-pointer transition-all hover:underline">Contact Us</a>
             </div>
         </div>
     )
