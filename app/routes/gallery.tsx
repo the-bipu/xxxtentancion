@@ -15,28 +15,24 @@ const Gallery = () => {
             <img src={logo} alt="" className="md:w-1/2 w-11/12 md:relative absolute top-5" />
             <Navigation />
 
-            <div className="flex md:flex-row flex-col w-full min-h-screen bg-black mt-10">
-                <div className="md:w-1/4 w-full md:h-screen h-auto">
-                    <div className="flex items-center justify-center relative w-full md:h-2/6 h-64 bgHoverFive">
-                        <span className="text-2xl font-semibold absolute top-10">Jahseh</span>
-                    </div>
-                    <div className="flex items-center justify-center relative w-full md:h-4/6 h-64 bgHoverThird">
-                        <span className="text-2xl font-semibold absolute bottom-10">Jahseh</span>
-                    </div>
+            <div id='images-wrapper' className={`flex flex-row flex-wrap mb-8 mt-16 items-center justify-start gap-8`}>
+                <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
+                    <img src='/assets/tenten.jpg' alt='' className='w-full h-auto object-cover rounded' />
                 </div>
-                <div className="flex md:w-1/4 w-full md:h-screen min-h-96 relative items-center justify-center bgHoverFirst">
-                    <span className="text-2xl font-semibold absolute top-10">Young Jahseh</span>
+                <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
+                    <img src='/assets/grid/tentan1.png' alt='' className='w-full h-auto object-cover rounded' />
                 </div>
-                <div className="md:w-1/4 w-full md:h-screen h-auto">
-                    <div className="flex items-center justify-center relative w-full md:h-4/6 h-64 bgHoverFour">
-                        <span className="text-2xl font-semibold absolute top-10">Jahseh</span>
-                    </div>
-                    <div className="flex items-center justify-center relative w-full md:h-2/6 h-64 bgHoverSecond">
-                        <span className="text-2xl font-semibold absolute bottom-10">Jahseh</span>
-                    </div>
+                <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
+                    <img src='/assets/grid/tentan3.png' alt='' className='w-full h-auto object-cover rounded' />
                 </div>
-                <div className="md:flex hidden md:w-1/4 w-full h-screen relative items-center justify-center bgHoverKid">
-                    <span className="text-2xl font-semibold absolute top-10">Kid Jahseh</span>
+                <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
+                    <img src='/assets/grid/tentan4.png' alt='' className='w-full h-auto object-cover rounded' />
+                </div>
+                <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
+                    <img src='/assets/grid/tentan5.png' alt='' className='w-full h-auto object-cover rounded' />
+                </div>
+                <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
+                    <img src='/assets/grid/kid.png' alt='' className='w-full h-auto object-cover rounded' />
                 </div>
             </div>
 
