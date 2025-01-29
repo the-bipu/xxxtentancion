@@ -18,7 +18,7 @@ const Navigation = () => {
     return (
         <div className='absolute w-full h-auto flex items-center justify-center top-0 left-0'>
             <div className='fixed top-10 w-11/12 h-auto flex items-center justify-end z-20'>
-                <span className='text-black text-xl cursor-pointer z-20' onClick={() => setNavStatus(!navStatus)}>
+                <span className='text-black text-xl cursor-pointer z-20 backdrop-blur' onClick={() => setNavStatus(!navStatus)}>
                     {navStatus ? 'Close' : 'Menu'}
                 </span>
             </div>
