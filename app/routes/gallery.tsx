@@ -37,6 +37,15 @@ const Gallery = () => {
                 <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
                     <img src='/assets/grid/tentan6.jpg' alt='' className='w-full h-auto object-cover rounded' />
                 </div>
+                <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
+                    <img src='/assets/grid/tentan7.jpg' alt='' className='w-full h-auto object-cover rounded' />
+                </div>
+                <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
+                    <img src='/assets/grid/tentan8.jpg' alt='' className='w-full h-auto object-cover rounded' />
+                </div>
+                <div className='flex flex-col items-center justify-center gap-10 md:w-96 w-full relative'>
+                    <img src='/assets/grid/tentan9.jpg' alt='' className='w-full h-auto object-cover rounded' />
+                </div>
             </div>
 
             <Footer />
