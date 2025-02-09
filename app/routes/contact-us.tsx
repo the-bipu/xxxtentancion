@@ -21,12 +21,11 @@ const ContactUs = () => {
 
                 <img src={kid} alt="" className="w-72" />
 
-                <div className="font-bold text-xl">Bitch,</div>
-                <div className="font-normal text-base text-justify">
-                    We only have one rule which is <br />
-                    Don't ever follow any Rule.
+                <div className="font-bold text-xl">Reach Us,</div>
+                <div className="flex flex-row gap-3">
+                    <input type="text" className="bg-white border border-gray-500 border-dotted rounded indent-2 py-2" placeholder="Your Name" />
+                    <input type="text" className="bg-white border border-gray-500 border-dotted rounded indent-2 py-2" placeholder="Your Email" />
                 </div>
-                
             </div>
 
             <Footer />
