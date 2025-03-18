@@ -23,8 +23,7 @@ const NoPolicies = () => {
 
                 <div className="font-bold text-xl">Bitch,</div>
                 <div className="font-normal text-base text-justify">
-                    We only have one rule which is <br />
-                    Don't ever follow any Rule.
+                Our only rule is: <strong>Never follow a rule.</strong>
                 </div>
                 
             </div>

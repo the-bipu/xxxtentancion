@@ -5,6 +5,7 @@ export const meta: MetaFunction = () => {
   return [
     { title: "XXXTENTANCION" },
     { name: "description", content: "Welcome to XXXTENTANCION!" },
+    { name: "google-site-verification", content: "IglenbFjY-IMapS880ujO1AWTLZ-PZjAe8uWRYU-hjE" },
   ];
 };
 
