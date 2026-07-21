@@ -8,10 +8,11 @@ export const meta = () => [
 
 const links = [
     { label: "Home", to: "/" },
-    { label: "His Story", to: "/story" },
-    { label: "Songs", to: "/songs" },
+    { label: "About Us", to: "/about-us" },
+    { label: "Contact Us", to: "/contact-us" },
     { label: "Gallery", to: "/gallery" },
-    { label: "Contact", to: "/contact" },
+    { label: "Scores", to: "/scores" },
+    { label: "No Policies", to: "/no-policies" },
 ];
 
 const Sitemap = () => {
