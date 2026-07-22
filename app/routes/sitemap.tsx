@@ -18,7 +18,7 @@ const links = [
 const Sitemap = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white text-black px-6 py-24">
-            <img src={logo} alt="" className="md:w-1/2 w-11/12 md:relative absolute top-5" />
+            <img src={logo} alt="" className="md:w-1/2 w-11/12 md:relative absolute top-1" />
 
             <h1 className="mt-16 md:mt-0 text-2xl md:text-4xl font-bold tracking-tight">
                 Sitemap
